@@ -69,4 +69,19 @@ const createScope = (props = {}) => {
   }, {})
 }
 
-export default createScope
+export {
+  createScope as default,
+  Heading,
+  Subheading,
+  Title,
+  Subtitle,
+  Text,
+  Link,
+  Image,
+  Blockquote,
+  Pre,
+  Code,
+  List,
+  Item,
+  Table
+}

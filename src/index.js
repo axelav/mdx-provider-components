@@ -10,7 +10,8 @@ import {
   Blockquote,
   Pre,
   Code,
-  List,
+  UnorderedList,
+  OrderedList,
   Item,
   Table
 } from './components'
@@ -54,7 +55,8 @@ const createScope = (props = {}) => {
     pre: Pre,
     code: Code,
     inlineCode: Code,
-    ul: List,
+    ul: UnorderedList,
+    ol: OrderedList,
     li: Item,
     table: Table
   }
@@ -81,7 +83,8 @@ export {
   Blockquote,
   Pre,
   Code,
-  List,
+  UnorderedList,
+  OrderedList,
   Item,
   Table
 }

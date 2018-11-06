@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Table = exports.Item = exports.List = exports.Code = exports.Pre = exports.Blockquote = exports.Image = exports.Link = exports.Text = exports.Subtitle = exports.Title = exports.Subheading = exports.Heading = undefined;
+exports.Table = exports.Item = exports.OrderedList = exports.UnorderedList = exports.Code = exports.Pre = exports.Blockquote = exports.Image = exports.Link = exports.Text = exports.Subtitle = exports.Title = exports.Subheading = exports.Heading = undefined;
 
 var _react = require('react');
 
@@ -102,7 +102,7 @@ var Code = function Code(_ref10) {
     children
   );
 };
-var List = function List(_ref11) {
+var UnorderedList = function UnorderedList(_ref11) {
   var children = _ref11.children;
   return _react2.default.createElement(
     'ul',
@@ -110,16 +110,24 @@ var List = function List(_ref11) {
     children
   );
 };
-var Item = function Item(_ref12) {
+var OrderedList = function OrderedList(_ref12) {
   var children = _ref12.children;
+  return _react2.default.createElement(
+    'ol',
+    { className: 'mt0 mh0 mb4 pl4' },
+    children
+  );
+};
+var Item = function Item(_ref13) {
+  var children = _ref13.children;
   return _react2.default.createElement(
     'li',
     { className: 'mt0 mb2 lh-copy' },
     children
   );
 };
-var Table = function Table(_ref13) {
-  var children = _ref13.children;
+var Table = function Table(_ref14) {
+  var children = _ref14.children;
   return _react2.default.createElement(
     'table',
     { className: 'collapse mb4 ba b--light-gray' },
@@ -137,6 +145,7 @@ exports.Image = Image;
 exports.Blockquote = Blockquote;
 exports.Pre = Pre;
 exports.Code = Code;
-exports.List = List;
+exports.UnorderedList = UnorderedList;
+exports.OrderedList = OrderedList;
 exports.Item = Item;
 exports.Table = Table;

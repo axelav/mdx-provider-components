@@ -38,7 +38,12 @@ const Pre = ({ children }) => (
   <pre className="pre bg-near-white pa3">{children}</pre>
 )
 const Code = ({ children }) => <code>{children}</code>
-const List = ({ children }) => <ul className="mt0 mh0 mb4 pl4">{children}</ul>
+const UnorderedList = ({ children }) => (
+  <ul className="mt0 mh0 mb4 pl4">{children}</ul>
+)
+const OrderedList = ({ children }) => (
+  <ol className="mt0 mh0 mb4 pl4">{children}</ol>
+)
 const Item = ({ children }) => <li className="mt0 mb2 lh-copy">{children}</li>
 const Table = ({ children }) => (
   <table className="collapse mb4 ba b--light-gray">{children}</table>
@@ -55,7 +60,8 @@ export {
   Blockquote,
   Pre,
   Code,
-  List,
+  UnorderedList,
+  OrderedList,
   Item,
   Table
 }

@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Table = exports.Item = exports.OrderedList = exports.UnorderedList = exports.Code = exports.Pre = exports.Blockquote = exports.Image = exports.Link = exports.Text = exports.Subtitle = exports.Title = exports.Subheading = exports.Heading = exports.default = undefined;
 
 var _react = require('react');
 
@@ -49,7 +50,8 @@ var createScope = function createScope() {
     pre: _components.Pre,
     code: _components.Code,
     inlineCode: _components.Code,
-    ul: _components.List,
+    ul: _components.UnorderedList,
+    ol: _components.OrderedList,
     li: _components.Item,
     table: _components.Table
   };
@@ -65,3 +67,17 @@ var createScope = function createScope() {
 };
 
 exports.default = createScope;
+exports.Heading = _components.Heading;
+exports.Subheading = _components.Subheading;
+exports.Title = _components.Title;
+exports.Subtitle = _components.Subtitle;
+exports.Text = _components.Text;
+exports.Link = _components.Link;
+exports.Image = _components.Image;
+exports.Blockquote = _components.Blockquote;
+exports.Pre = _components.Pre;
+exports.Code = _components.Code;
+exports.UnorderedList = _components.UnorderedList;
+exports.OrderedList = _components.OrderedList;
+exports.Item = _components.Item;
+exports.Table = _components.Table;

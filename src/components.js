@@ -1,19 +1,26 @@
 import React from 'react'
+import cx from 'classnames'
 import { widont } from 'journalize'
 
-const headingClassNames = 'mt0 mb4 hl-title'
+const Heading = ({ children, smallMargin }) => {
+  const prefix = cx('f3 mt0 lh-title', {
+    mb2: smallMargin,
+    mb4: !smallMargin
+  })
 
-const Heading = ({ children }) => (
-  <h1 className={`${headingClassNames} f3`}>{children}</h1>
-)
+  return <h1 className={prefix}>{children}</h1>
+}
+
+Heading.defaultProps = { smallMargin: false }
+
 const Subheading = ({ children }) => (
-  <h2 className={`${headingClassNames} f4`}>{children}</h2>
+  <h2 className="mt0 mb4 lh-title f4">{children}</h2>
 )
 const Title = ({ children }) => (
-  <h3 className={`${headingClassNames} f5`}>{children}</h3>
+  <h3 className="mt0 mb4 lh-title f5">{children}</h3>
 )
 const Subtitle = ({ children }) => (
-  <h4 className={`${headingClassNames} f5 i normal`}>{children}</h4>
+  <h4 className="mt0 mb4 lh-title f5 i normal">{children}</h4>
 )
 const Text = ({ children }) => {
   if (typeof children === 'string') {

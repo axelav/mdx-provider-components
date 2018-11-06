@@ -9,25 +9,37 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _classnames = require('classnames');
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
 var _journalize = require('journalize');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var headingClassNames = 'mt0 mb4 hl-title';
-
 var Heading = function Heading(_ref) {
-  var children = _ref.children;
+  var children = _ref.children,
+      smallMargin = _ref.smallMargin;
+
+  var prefix = (0, _classnames2.default)('f3 mt0 lh-title', {
+    mb2: smallMargin,
+    mb4: !smallMargin
+  });
+
   return _react2.default.createElement(
     'h1',
-    { className: headingClassNames + ' f3' },
+    { className: prefix },
     children
   );
 };
+
+Heading.defaultProps = { smallMargin: false };
+
 var Subheading = function Subheading(_ref2) {
   var children = _ref2.children;
   return _react2.default.createElement(
     'h2',
-    { className: headingClassNames + ' f4' },
+    { className: 'mt0 mb4 lh-title f4' },
     children
   );
 };
@@ -35,7 +47,7 @@ var Title = function Title(_ref3) {
   var children = _ref3.children;
   return _react2.default.createElement(
     'h3',
-    { className: headingClassNames + ' f5' },
+    { className: 'mt0 mb4 lh-title f5' },
     children
   );
 };
@@ -43,7 +55,7 @@ var Subtitle = function Subtitle(_ref4) {
   var children = _ref4.children;
   return _react2.default.createElement(
     'h4',
-    { className: headingClassNames + ' f5 i normal' },
+    { className: 'mt0 mb4 lh-title f5 i normal' },
     children
   );
 };

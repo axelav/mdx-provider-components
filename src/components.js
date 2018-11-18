@@ -20,7 +20,7 @@ const Title = ({ children }) => (
   <h3 className="mt0 mb4 lh-title f5">{children}</h3>
 )
 const Subtitle = ({ children }) => (
-  <h4 className="mt0 mb4 lh-title f5 i normal">{children}</h4>
+  <h4 className="mt0 mb4 lh-title f5 i normal gray">{children}</h4>
 )
 const Text = ({ children }) => {
   if (typeof children === 'string') {

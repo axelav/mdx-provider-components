@@ -1,6 +1,6 @@
 {
   "name": "mdx-provider-components",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "main": "dist/index.js",
   "scripts": {
     "transpile": "babel src -d dist",

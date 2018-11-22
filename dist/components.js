@@ -55,7 +55,7 @@ var Subtitle = function Subtitle(_ref4) {
   var children = _ref4.children;
   return _react2.default.createElement(
     'h4',
-    { className: 'mt0 mb4 lh-title f5 i normal' },
+    { className: 'mt0 mb4 lh-title f5 i normal gray' },
     children
   );
 };
@@ -102,7 +102,7 @@ var Pre = function Pre(_ref9) {
   var children = _ref9.children;
   return _react2.default.createElement(
     'pre',
-    { className: 'pre bg-near-white pa3' },
+    { className: 'pre bg-near-white pa3 mb4' },
     children
   );
 };

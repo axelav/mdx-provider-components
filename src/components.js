@@ -42,7 +42,7 @@ const Blockquote = ({ children }) => (
   </blockquote>
 )
 const Pre = ({ children }) => (
-  <pre className="pre bg-near-white pa3">{children}</pre>
+  <pre className="pre bg-near-white pa3 mb4">{children}</pre>
 )
 const Code = ({ children }) => <code>{children}</code>
 const UnorderedList = ({ children }) => (
